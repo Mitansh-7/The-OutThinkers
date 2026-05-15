@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The OutThinkers — Effortless elegance. Curated essentials. Shop women's and men's fashion.">
+  <title>The OutThinkers</title>
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+  <div class="page-shell">
+
+    <!-- ───── Header / Navbar ───── -->
+    <header class="topbar" id="topbar">
+      <a class="brand" href="index.html" aria-label="The OutThinkers home">
+        <span class="brand-name">The OutThinkers</span>
+      </a>
+
+      <div class="topbar-right">
+        <nav class="site-nav" aria-label="Main navigation">
+          <a href="women.html">Women</a>
+          <a href="men.html">Men</a>
+          <a href="new-arrivals.html">New Arrivals</a>
+          <a href="sale.html">Sale</a>
+          <a href="about.html">About</a>
+        </nav>
+
+        <div class="icon-actions">
+          <a href="search.html" aria-label="Search" id="searchIcon"><i class="fa-solid fa-magnifying-glass"></i></a>
+          <a href="cart.html" aria-label="View cart" id="cartIcon"><i class="fa-solid fa-bag-shopping"></i></a>
+          <a href="account.html" aria-label="Account" id="accountIcon"><i class="fa-regular fa-user"></i></a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+
+      <!-- ───── Hero ───── -->
+      <section class="hero" id="hero">
+        <div class="hero-copy">
+          <h1>THE<br>OUTTHINKERS</h1>
+          <p class="hero-tagline">EFFORTLESS ELEGANCE. CURATED ESSENTIALS.</p>
+          <a href="new-arrivals.html" class="btn-shop" id="shopNewArrivals">SHOP NEW ARRIVALS</a>
+        </div>
+        <div class="hero-image">
+          <img src="images/hero-model.png" alt="Model in beige trench coat — The OutThinkers new arrivals">
+        </div>
+      </section>
+
+      <!-- ───── Featured Collection ───── -->
+      <section class="featured" id="featuredCollection">
+        <h2 class="featured-heading">FEATURED COLLECTION</h2>
+
+        <div class="product-grid" id="productGrid">
+
+          <article class="product-card" data-product-id="home-1" data-mrp="2999" data-discount="20" data-category="Home Collection">
+            <div class="product-img-wrap">
+              <img src="images/soft-hoodie.png" alt="Soft Hoodie">
+            </div>
+            <div class="product-info">
+              <div class="product-details">
+                <h3>Soft Hoodie</h3>
+                <p class="price">₹2,399</p>
+              </div>
+              <button class="add-to-cart" data-product="home-1">Add to Cart</button>
+            </div>
+          </article>
+
+          <article class="product-card" data-product-id="home-2" data-mrp="3499" data-discount="15" data-category="Home Collection">
+            <div class="product-img-wrap">
+              <img src="images/urban-track-top.png" alt="Urban Track Top">
+            </div>
+            <div class="product-info">
+              <div class="product-details">
+                <h3>Urban Track Top</h3>
+                <p class="price">₹2,974</p>
+              </div>
+              <button class="add-to-cart" data-product="home-2">Add to Cart</button>
+            </div>
+          </article>
+
+          <article class="product-card" data-product-id="home-3" data-mrp="1999" data-discount="10" data-category="Home Collection">
+            <div class="product-img-wrap">
+              <img src="images/daily-pullover.png" alt="Daily Pullover">
+            </div>
+            <div class="product-info">
+              <div class="product-details">
+                <h3>Daily Pullover</h3>
+                <p class="price">₹1,799</p>
+              </div>
+              <button class="add-to-cart" data-product="home-3">Add to Cart</button>
+            </div>
+          </article>
+
+          <article class="product-card" data-product-id="home-4" data-mrp="4499" data-discount="22" data-category="Home Collection">
+            <div class="product-img-wrap">
+              <img src="images/street-bomber.png" alt="Street Bomber">
+            </div>
+            <div class="product-info">
+              <div class="product-details">
+                <h3>Street Bomber</h3>
+                <p class="price">₹3,509</p>
+              </div>
+              <button class="add-to-cart" data-product="home-4">Add to Cart</button>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ───── Footer ───── -->
+    <footer class="site-footer" id="siteFooter">
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="women.html">Women</a>
+        <a href="men.html">Men</a>
+        <a href="new-arrivals.html">New Arrivals</a>
+        <a href="sale.html">Sale</a>
+        <a href="about.html">About</a>
+      </nav>
+      <p class="copyright">Copyright &copy; 2022 · The OutThinkers</p>
+    </footer>
+
+  </div>
+
+  <script src="js/cartManager.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>

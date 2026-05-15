@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Shop men's essentials at The OutThinkers — outerwear, tops, bottoms, accessories and shoes.">
+  <title>Men's Essentials — The OutThinkers</title>
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/category.css">
+</head>
+<body>
+  <div class="page-shell">
+
+    <!-- ───── Header / Navbar ───── -->
+    <header class="topbar" id="topbar">
+      <a class="brand" href="index.html" aria-label="The OutThinkers home">
+        <span class="brand-name">The OutThinkers</span>
+      </a>
+
+      <div class="topbar-right">
+        <nav class="site-nav" aria-label="Main navigation">
+          <a href="women.html">Women</a>
+          <a href="men.html" class="active">Men</a>
+          <a href="new-arrivals.html">New Arrivals</a>
+          <a href="sale.html">Sale</a>
+          <a href="about.html">About</a>
+        </nav>
+
+        <div class="icon-actions">
+          <a href="search.html" aria-label="Search" id="searchIcon"><i class="fa-solid fa-magnifying-glass"></i></a>
+          <a href="cart.html" aria-label="View cart" id="cartIcon"><i class="fa-solid fa-bag-shopping"></i></a>
+          <a href="account.html" aria-label="Account" id="accountIcon"><i class="fa-regular fa-user"></i></a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+
+      <!-- ───── Page Title ───── -->
+      <section class="page-title">
+        <h1>MEN'S ESSENTIALS</h1>
+      </section>
+
+      <!-- ───── Category Layout ───── -->
+      <div class="category-layout">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+          <ul class="sidebar-nav">
+            <li><a href="#" data-category="all" class="active">All</a></li>
+            <li><a href="#" data-category="outerwear">Outerwear</a></li>
+            <li><a href="#" data-category="tops">Tops</a></li>
+            <li><a href="#" data-category="bottoms">Bottoms</a></li>
+            <li><a href="#" data-category="accessories">Accessories</a></li>
+            <li><a href="#" data-category="shoes">Shoes</a></li>
+          </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <div class="content-area">
+
+          <!-- Filters -->
+          <div class="filters-bar">
+            <div class="filter-select">
+              <select id="sortBy">
+                <option value="featured">Sort By</option>
+                <option value="price-low">Price: Low to High</option>
+                <option value="price-high">Price: High to Low</option>
+                <option value="name-az">Name: A–Z</option>
+                <option value="name-za">Name: Z–A</option>
+              </select>
+            </div>
+            <div class="filter-select">
+              <select id="colorFilter">
+                <option value="all">Color</option>
+                <option value="beige">Beige</option>
+                <option value="grey">Grey</option>
+                <option value="black">Black</option>
+                <option value="navy">Navy</option>
+                <option value="brown">Brown</option>
+              </select>
+            </div>
+            <div class="filter-select">
+              <select id="sizeFilter">
+                <option value="all">Size</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                <option value="XXL">XXL</option>
+              </select>
+            </div>
+            <div class="filter-select">
+              <select id="priceRange">
+                <option value="all">Price Range</option>
+                <option value="0-1000">Under ₹1,000</option>
+                <option value="1000-2000">₹1,000 – ₹2,000</option>
+                <option value="2000-3000">₹2,000 – ₹3,000</option>
+                <option value="3000+">₹3,000+</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Product Grid -->
+          <div class="product-grid" id="productGrid">
+
+            <article class="product-card" data-product-id="men-1" data-mrp="5499" data-discount="18" data-category="Men" data-subcategory="outerwear" data-color="beige" data-sizes="S,M,L,XL">
+              <div class="product-img-wrap">
+                <img src="images/structured-wool-coat.png" alt="Structured Wool Coat">
+              </div>
+              <div class="product-info">
+                <div class="product-details">
+                  <h3>Structured Wool Coat</h3>
+                  <p class="price">₹4,509</p>
+                </div>
+                <button class="add-to-cart" data-product="men-1">Add to Cart</button>
+              </div>
+            </article>
+
+            <article class="product-card" data-product-id="men-2" data-mrp="2499" data-discount="12" data-category="Men" data-subcategory="tops" data-color="grey" data-sizes="S,M,L,XL">
+              <div class="product-img-wrap">
+                <img src="images/tailored-shirt.png" alt="Tailored Shirt">
+              </div>
+              <div class="product-info">
+                <div class="product-details">
+                  <h3>Tailored Shirt</h3>
+                  <p class="price">₹2,199</p>
+                </div>
+                <button class="add-to-cart" data-product="men-2">Add to Cart</button>
+              </div>
+            </article>
+
+            <article class="product-card" data-product-id="men-3" data-mrp="3500" data-discount="20" data-category="Men" data-subcategory="bottoms" data-color="black" data-sizes="S,M,L,XL,XXL">
+              <div class="product-img-wrap">
+                <img src="images/trousers.png" alt="Trousers">
+              </div>
+              <div class="product-info">
+                <div class="product-details">
+                  <h3>Trousers</h3>
+                  <p class="price">₹2,800</p>
+                </div>
+                <button class="add-to-cart" data-product="men-3">Add to Cart</button>
+              </div>
+            </article>
+
+            <article class="product-card" data-product-id="men-4" data-mrp="3799" data-discount="21" data-category="Men" data-subcategory="outerwear" data-color="navy" data-sizes="M,L,XL">
+              <div class="product-img-wrap">
+                <img src="images/bomber-jacket.png" alt="Bomber Jacket">
+              </div>
+              <div class="product-info">
+                <div class="product-details">
+                  <h3>Bomber Jacket</h3>
+                  <p class="price">₹3,001</p>
+                </div>
+                <button class="add-to-cart" data-product="men-4">Add to Cart</button>
+              </div>
+            </article>
+
+            <article class="product-card" data-product-id="men-5" data-mrp="1999" data-discount="15" data-category="Men" data-subcategory="outerwear" data-color="grey" data-sizes="S,M,L,XL">
+              <div class="product-img-wrap">
+                <img src="images/cargo-basket.png" alt="Cargo Basket">
+              </div>
+              <div class="product-info">
+                <div class="product-details">
+                  <h3>Cargo Basket</h3>
+                  <p class="price">₹1,699</p>
+                </div>
+                <button class="add-to-cart" data-product="men-5">Add to Cart</button>
+              </div>
+            </article>
+
+            <article class="product-card" data-product-id="men-6" data-mrp="2999" data-discount="10" data-category="Men" data-subcategory="bottoms" data-color="black" data-sizes="S,M,L,XL,XXL">
+              <div class="product-img-wrap">
+                <img src="images/tailored-trouser.png" alt="Tailored Trouser">
+              </div>
+              <div class="product-info">
+                <div class="product-details">
+                  <h3>Tailored Trouser</h3>
+                  <p class="price">₹2,699</p>
+                </div>
+                <button class="add-to-cart" data-product="men-6">Add to Cart</button>
+              </div>
+            </article>
+
+            <article class="product-card" data-product-id="men-7" data-mrp="4299" data-discount="16" data-category="Men" data-subcategory="tops" data-color="black" data-sizes="S,M,L,XL">
+              <div class="product-img-wrap">
+                <img src="images/minimalist-jacket.png" alt="Minimalist Jacket">
+              </div>
+              <div class="product-info">
+                <div class="product-details">
+                  <h3>Minimalist Jacket</h3>
+                  <p class="price">₹3,611</p>
+                </div>
+                <button class="add-to-cart" data-product="men-7">Add to Cart</button>
+              </div>
+            </article>
+
+            <article class="product-card" data-product-id="men-8" data-mrp="3999" data-discount="25" data-category="Men" data-subcategory="shoes" data-color="brown" data-sizes="7,8,9,10,11">
+              <div class="product-img-wrap">
+                <img src="images/leather-boots.png" alt="Leather Boots">
+              </div>
+              <div class="product-info">
+                <div class="product-details">
+                  <h3>Leather Boots</h3>
+                  <p class="price">₹2,999</p>
+                </div>
+                <button class="add-to-cart" data-product="men-8">Add to Cart</button>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+      </div>
+
+    </main>
+
+    <!-- ───── Footer ───── -->
+    <footer class="site-footer" id="siteFooter">
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="women.html">Women</a>
+        <a href="men.html">Men</a>
+        <a href="new-arrivals.html">New Arrivals</a>
+        <a href="sale.html">Sale</a>
+        <a href="about.html">About</a>
+      </nav>
+      <p class="copyright">Copyright &copy; 2022 · The OutThinkers</p>
+    </footer>
+
+  </div>
+
+  <script src="js/cartManager.js"></script>
+  <script src="js/category.js"></script>
+</body>
+</html>

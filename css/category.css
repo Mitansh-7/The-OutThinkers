@@ -1,0 +1,486 @@
+/* ══════════════════════════════════════════
+   The OutThinkers – category.css
+   Shared styles for Men / Women / Sale / New Arrivals
+   Matches the reference design exactly
+   ══════════════════════════════════════════ */
+
+/* ── Reset & Base ───────────────────────── */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #f0f0f0;
+  --card-bg: #f5f5f5;
+  --ink: #1a1a1a;
+  --muted: #6b6b6b;
+  --border: #e0e0e0;
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-serif: "Playfair Display", "Georgia", serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: var(--bg);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button, select {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+/* ── Page Shell ─────────────────────────── */
+.page-shell {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* ══════════════════════════════════════════
+   HEADER / TOPBAR
+   ══════════════════════════════════════════ */
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 22px 0 20px;
+  border-bottom: 1px solid var(--border);
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0;
+}
+
+.brand-name {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+}
+
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.site-nav {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.site-nav a {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--ink);
+  transition: opacity 0.2s ease;
+}
+
+.site-nav a:hover {
+  opacity: 0.6;
+}
+
+.site-nav a.active {
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.icon-actions {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.icon-actions a {
+  font-size: 16px;
+  color: var(--ink);
+  transition: opacity 0.2s ease;
+}
+
+.icon-actions a:hover {
+  opacity: 0.55;
+}
+
+/* ══════════════════════════════════════════
+   PAGE TITLE
+   ══════════════════════════════════════════ */
+.page-title {
+  text-align: center;
+  padding: 48px 0 36px;
+}
+
+.page-title h1 {
+  font-family: var(--font-serif);
+  font-weight: 800;
+  font-size: clamp(28px, 4vw, 42px);
+  letter-spacing: 0.04em;
+  color: var(--ink);
+}
+
+/* ══════════════════════════════════════════
+   CATEGORY LAYOUT (Sidebar + Grid)
+   ══════════════════════════════════════════ */
+.category-layout {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 40px;
+  padding-bottom: 60px;
+}
+
+/* ── Sidebar ──────────────────────────── */
+.sidebar {
+  padding-top: 8px;
+}
+
+.sidebar-nav {
+  list-style: none;
+}
+
+.sidebar-nav li {
+  margin-bottom: 14px;
+}
+
+.sidebar-nav a {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--ink);
+  transition: opacity 0.2s ease, font-weight 0.15s ease;
+  display: inline-block;
+}
+
+.sidebar-nav a:hover {
+  opacity: 0.6;
+}
+
+.sidebar-nav a.active {
+  font-weight: 600;
+}
+
+/* ── Filters Bar ──────────────────────── */
+.filters-bar {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.filter-select {
+  position: relative;
+}
+
+.filter-select select {
+  width: 100%;
+  padding: 12px 36px 12px 16px;
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--ink);
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 0;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.filter-select select:hover,
+.filter-select select:focus {
+  border-color: #999;
+}
+
+.filter-select::after {
+  content: '';
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid var(--ink);
+  pointer-events: none;
+}
+
+/* ══════════════════════════════════════════
+   PRODUCT GRID
+   ══════════════════════════════════════════ */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+/* ── Product Card ──────────────────────── */
+.product-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-img-wrap {
+  background: var(--card-bg);
+  border-radius: 4px;
+  overflow: hidden;
+  aspect-ratio: 1 / 1.15;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+}
+
+.product-img-wrap img {
+  width: 85%;
+  height: 85%;
+  object-fit: contain;
+  transition: transform 0.35s ease;
+}
+
+.product-card:hover .product-img-wrap img {
+  transform: scale(1.05);
+}
+
+.product-info {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.product-details h3 {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--ink);
+  margin-bottom: 4px;
+}
+
+.product-details .price {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--ink);
+}
+
+/* Sale price styling */
+.product-details .price.sale {
+  color: #c0392b;
+}
+
+.product-details .original-price {
+  font-size: 12px;
+  color: var(--muted);
+  text-decoration: line-through;
+  margin-left: 6px;
+}
+
+.product-details .discount-badge {
+  display: inline-block;
+  background: #c0392b;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: 2px;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
+.add-to-cart {
+  background: none;
+  border: none;
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--ink);
+  padding: 0;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  white-space: nowrap;
+  transition: opacity 0.2s ease;
+}
+
+.add-to-cart:hover {
+  opacity: 0.6;
+}
+
+/* "New" badge for New Arrivals */
+.new-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: var(--ink);
+  color: #fff;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  padding: 4px 10px;
+  z-index: 2;
+}
+
+.product-img-wrap {
+  position: relative;
+}
+
+/* ══════════════════════════════════════════
+   FOOTER
+   ══════════════════════════════════════════ */
+.site-footer {
+  border-top: 1px solid var(--border);
+  padding: 30px 0 36px;
+  text-align: center;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 16px;
+}
+
+.footer-nav a {
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--ink);
+  transition: opacity 0.2s ease;
+}
+
+.footer-nav a:hover {
+  opacity: 0.6;
+}
+
+.copyright {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+/* ══════════════════════════════════════════
+   RESPONSIVE
+   ══════════════════════════════════════════ */
+@media (max-width: 960px) {
+  .page-shell {
+    padding: 0 24px;
+  }
+
+  .category-layout {
+    grid-template-columns: 140px 1fr;
+    gap: 24px;
+  }
+
+  .filters-bar {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .topbar-right {
+    gap: 20px;
+  }
+
+  .site-nav {
+    gap: 16px;
+  }
+
+  .site-nav a {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 640px) {
+  .page-shell {
+    padding: 0 16px;
+  }
+
+  .topbar {
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 16px 0;
+  }
+
+  .topbar-right {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .site-nav {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .category-layout {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .sidebar {
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 16px;
+  }
+
+  .sidebar-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 20px;
+  }
+
+  .sidebar-nav li {
+    margin-bottom: 0;
+  }
+
+  .filters-bar {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  .product-info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .footer-nav {
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+
+  .page-title h1 {
+    font-size: 24px;
+  }
+}

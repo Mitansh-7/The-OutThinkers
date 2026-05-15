@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="My Account — The OutThinkers">
+  <title>My Account — The OutThinkers</title>
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/account.css">
+</head>
+<body>
+  <div class="page-shell">
+    
+    <!-- ───── Header / Navbar ───── -->
+    <header class="topbar" id="topbar">
+      <a class="brand" href="index.html" aria-label="The OutThinkers home">
+        <span class="brand-name">The OutThinkers</span>
+      </a>
+
+      <div class="topbar-right">
+        <nav class="site-nav" aria-label="Main navigation">
+          <a href="women.html">Women</a>
+          <a href="men.html">Men</a>
+          <a href="new-arrivals.html">New Arrivals</a>
+          <a href="sale.html">Sale</a>
+          <a href="about.html">About</a>
+        </nav>
+
+        <div class="icon-actions">
+          <a href="search.html" aria-label="Search" id="searchIcon"><i class="fa-solid fa-magnifying-glass"></i></a>
+          <a href="cart.html" aria-label="View cart" id="cartIcon"><i class="fa-solid fa-bag-shopping"></i></a>
+          <a href="account.html" aria-label="Account" id="accountIcon" class="active"><i class="fa-solid fa-user"></i></a>
+        </div>
+      </div>
+    </header>
+
+    <main class="account-container">
+      
+      <div class="account-layout">
+        
+        <!-- Sidebar Navigation -->
+        <aside class="account-sidebar">
+          <nav class="account-nav">
+            <a href="#" class="nav-link active" data-tab="order-history">Order History</a>
+            <a href="#" class="nav-link" data-tab="profile-info">Profile Info</a>
+            <a href="#" class="nav-link" data-tab="addresses">Addresses</a>
+            <a href="#" class="nav-link" data-tab="wishlist">Wishlist</a>
+            <a href="#" class="nav-link sign-out">Sign Out</a>
+          </nav>
+        </aside>
+
+        <!-- Main Content Area -->
+        <section class="account-content">
+          
+          <div class="account-header">
+            <h1 class="welcome-text">Welcome back, Eleanor</h1>
+            <p class="member-since">Member since 2022</p>
+          </div>
+
+          <!-- Order History Tab (Default) -->
+          <div class="tab-pane active" id="tab-order-history">
+            <h2 class="section-title">Recent Orders</h2>
+            
+            <div class="orders-table-wrapper" id="ordersTableWrapper">
+              <table class="orders-table">
+                <thead>
+                  <tr>
+                    <th>ORDER</th>
+                    <th>DATE</th>
+                    <th>STATUS</th>
+                    <th>ITEMS</th>
+                    <th>TOTAL</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody id="ordersBody">
+                  <!-- Dynamically rendered by account.js -->
+                </tbody>
+              </table>
+            </div>
+
+            <div class="empty-orders" id="emptyOrders" style="display: none;">
+              <div class="empty-orders-icon"><i class="fa-solid fa-bag-shopping"></i></div>
+              <p class="empty-orders-text">No orders yet</p>
+              <p class="empty-orders-sub">When you place an order, it will appear here.</p>
+              <a href="index.html" class="btn-outline">START SHOPPING</a>
+            </div>
+          </div>
+
+          <!-- Profile Info Tab (Hidden by default) -->
+          <div class="tab-pane" id="tab-profile-info">
+            <h2 class="section-title">Profile Info</h2>
+            <div class="profile-details">
+              <div class="detail-row">
+                <span class="detail-label">Name</span>
+                <span class="detail-value">Eleanor Vance</span>
+              </div>
+              <div class="detail-row">
+                <span class="detail-label">Email</span>
+                <span class="detail-value">eleanor.v@example.com</span>
+              </div>
+              <div class="detail-row">
+                <span class="detail-label">Password</span>
+                <span class="detail-value">••••••••</span>
+              </div>
+              <button type="button" class="btn-outline">EDIT PROFILE</button>
+            </div>
+          </div>
+
+          <!-- Addresses Tab (Hidden by default) -->
+          <div class="tab-pane" id="tab-addresses">
+            <h2 class="section-title">Addresses</h2>
+            <div class="address-list">
+              <div class="address-card">
+                <h3>Default Shipping</h3>
+                <p>Eleanor Vance<br>123 High Street, Apt 4B<br>London, W1D 1AN<br>United Kingdom</p>
+                <button type="button" class="btn-text">Edit</button>
+              </div>
+            </div>
+            <button type="button" class="btn-outline">ADD NEW ADDRESS</button>
+          </div>
+
+          <!-- Wishlist Tab (Hidden by default) -->
+          <div class="tab-pane" id="tab-wishlist">
+            <h2 class="section-title">Wishlist</h2>
+            <p>Your wishlist is currently empty.</p>
+          </div>
+
+        </section>
+
+      </div>
+      
+    </main>
+
+    <!-- ───── Footer ───── -->
+    <footer class="site-footer">
+      <div class="footer-content">
+        <div class="footer-left">
+          <a class="brand footer-brand" href="index.html">
+            <span class="brand-name">The OutThinkers</span>
+          </a>
+          <p class="copyright">&copy; 2024 The OutThinkers. All rights reserved.</p>
+        </div>
+        <div class="footer-right">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Shipping & Returns</a>
+          <a href="#">Contact Us</a>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="js/cartManager.js"></script>
+  <script src="js/account.js"></script>
+</body>
+</html>

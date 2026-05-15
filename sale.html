@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sale at The OutThinkers — up to 40% off on curated men's and women's essentials.">
+  <title>Sale — The OutThinkers</title>
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/category.css">
+</head>
+<body>
+  <div class="page-shell">
+
+    <!-- ───── Header / Navbar ───── -->
+    <header class="topbar" id="topbar">
+      <a class="brand" href="index.html" aria-label="The OutThinkers home">
+        <span class="brand-name">The OutThinkers</span>
+      </a>
+
+      <div class="topbar-right">
+        <nav class="site-nav" aria-label="Main navigation">
+          <a href="women.html">Women</a>
+          <a href="men.html">Men</a>
+          <a href="new-arrivals.html">New Arrivals</a>
+          <a href="sale.html" class="active">Sale</a>
+          <a href="about.html">About</a>
+        </nav>
+
+        <div class="icon-actions">
+          <a href="search.html" aria-label="Search" id="searchIcon"><i class="fa-solid fa-magnifying-glass"></i></a>
+          <a href="cart.html" aria-label="View cart" id="cartIcon"><i class="fa-solid fa-bag-shopping"></i></a>
+          <a href="account.html" aria-label="Account" id="accountIcon"><i class="fa-regular fa-user"></i></a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+
+      <!-- ───── Page Title ───── -->
+      <section class="page-title">
+        <h1>SALE</h1>
+      </section>
+
+      <!-- ───── Category Layout ───── -->
+      <div class="category-layout">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+          <ul class="sidebar-nav">
+            <li><a href="#" data-category="all" class="active">All</a></li>
+            <li><a href="#" data-category="outerwear">Outerwear</a></li>
+            <li><a href="#" data-category="tops">Tops</a></li>
+            <li><a href="#" data-category="bottoms">Bottoms</a></li>
+            <li><a href="#" data-category="dresses">Dresses</a></li>
+            <li><a href="#" data-category="shoes">Shoes</a></li>
+            <li><a href="#" data-category="bags">Bags</a></li>
+          </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <div class="content-area">
+
+          <!-- Filters -->
+          <div class="filters-bar">
+            <div class="filter-select">
+              <select id="sortBy">
+                <option value="featured">Sort By</option>
+                <option value="price-low">Price: Low to High</option>
+                <option value="price-high">Price: High to Low</option>
+                <option value="name-az">Name: A–Z</option>
+                <option value="name-za">Name: Z–A</option>
+              </select>
+            </div>
+            <div class="filter-select">
+              <select id="colorFilter">
+                <option value="all">Color</option>
+                <option value="beige">Beige</option>
+                <option value="grey">Grey</option>
+                <option value="black">Black</option>
+                <option value="brown">Brown</option>
+                <option value="navy">Navy</option>
+                <option value="cream">Cream</option>
+                <option value="olive">Olive</option>
+              </select>
+            </div>
+            <div class="filter-select">
+              <select id="sizeFilter">
+                <option value="all">Size</option>
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+              </select>
+            </div>
+            <div class="filter-select">
+              <select id="priceRange">
+                <option value="all">Price Range</option>
+                <option value="0-1000">Under ₹1,000</option>
+                <option value="1000-2000">₹1,000 – ₹2,000</option>
+                <option value="2000-3000">₹2,000 – ₹3,000</option>
+                <option value="3000+">₹3,000+</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Product Grid -->
+          <div class="product-grid" id="productGrid">
+
+            <article class="product-card" data-product-id="sale-1" data-mrp="4500" data-discount="40" data-category="Sale" data-subcategory="outerwear" data-color="beige" data-sizes="S,M,L,XL">
+              <div class="product-img-wrap">
+                <img src="images/trench-coat.png" alt="Classic Trench Coat">
+              </div>
+              <div class="product-info">
+                <div class="product-details">
+                  <h3>Classic Trench Coat</h3>
+                  <p class="price sale">₹2,700 <span class="original-price">₹4,500</span> <span class="discount-badge">40% OFF</span></p>
+                </div>
+                <button class="add-to-cart" data-product="sale-1">Add to Cart</button>
+              </div>
+            </article>
+
+            <article class="product-card" data-product-id="sale-2" data-mrp="3000" data-discount="30" data-category="Sale" data-subcategory="tops" data-color="grey" data-sizes="S,M,L,XL">
+              <div class="product-img-wrap">
+                <img src="images/tailored-shirt.png" alt="Tailored Shirt">
+              </div>
+              <div class="product-info">
+                <div class="product-details">
+                  <h3>Tailored Shirt</h3>
+                  <p class="price sale">₹2,100 <span class="original-price">₹3,000</span> <span class="discount-badge">30% OFF</span></p>
+                </div>
+                <button class="add-to-cart" data-product="sale-2">Add to Cart</button>
+              </div>
+            </article>
+
+            <article class="product-card" data-product-id="sale-3" data-mrp="3500" data-discount="35" data-category="Sale" data-subcategory="bottoms" data-color="olive" data-sizes="XS,S,M,L,XL">
+              <div class="product-img-wrap">
+                <img src="images/wide-leg-pants.png" alt="Wide Leg Pants">
+              </div>
+              <div class="product-info">
+                <div class="product-details">
+                  <h3>Wide Leg Pants</h3>
+                  <p class="price sale">₹2,275 <span class="original-price">₹3,500</span> <span class="discount-badge">35% OFF</span></p>
+                </div>
+                <button class="add-to-cart" data-product="sale-3">Add to Cart</button>
+              </div>
+            </article>
+
+            <article class="product-card" data-product-id="sale-4" data-mrp="3000" data-discount="30" data-category="Sale" data-subcategory="outerwear" data-color="navy" data-sizes="M,L,XL">
+              <div class="product-img-wrap">
+                <img src="images/bomber-jacket.png" alt="Bomber Jacket">
+              </div>
+              <div class="product-info">
+                <div class="product-details">
+                  <h3>Bomber Jacket</h3>
+                  <p class="price sale">₹2,100 <span class="original-price">₹3,000</span> <span class="discount-badge">30% OFF</span></p>
+                </div>
+                <button class="add-to-cart" data-product="sale-4">Add to Cart</button>
+              </div>
+            </article>
+
+            <article class="product-card" data-product-id="sale-5" data-mrp="3500" data-discount="30" data-category="Sale" data-subcategory="shoes" data-color="black" data-sizes="5,6,7,8">
+              <div class="product-img-wrap">
+                <img src="images/ankle-boots.png" alt="Suede Ankle Boots">
+              </div>
+              <div class="product-info">
+                <div class="product-details">
+                  <h3>Suede Ankle Boots</h3>
+                  <p class="price sale">₹2,450 <span class="original-price">₹3,500</span> <span class="discount-badge">30% OFF</span></p>
+                </div>
+                <button class="add-to-cart" data-product="sale-5">Add to Cart</button>
+              </div>
+            </article>
+
+            <article class="product-card" data-product-id="sale-6" data-mrp="3200" data-discount="25" data-category="Sale" data-subcategory="bottoms" data-color="beige" data-sizes="XS,S,M,L,XL">
+              <div class="product-img-wrap">
+                <img src="images/midi-skirt.png" alt="Pleated Midi Skirt">
+              </div>
+              <div class="product-info">
+                <div class="product-details">
+                  <h3>Pleated Midi Skirt</h3>
+                  <p class="price sale">₹2,400 <span class="original-price">₹3,200</span> <span class="discount-badge">25% OFF</span></p>
+                </div>
+                <button class="add-to-cart" data-product="sale-6">Add to Cart</button>
+              </div>
+            </article>
+
+            <article class="product-card" data-product-id="sale-7" data-mrp="3000" data-discount="25" data-category="Sale" data-subcategory="tops" data-color="black" data-sizes="S,M,L,XL">
+              <div class="product-img-wrap">
+                <img src="images/minimalist-jacket.png" alt="Minimalist Jacket">
+              </div>
+              <div class="product-info">
+                <div class="product-details">
+                  <h3>Minimalist Jacket</h3>
+                  <p class="price sale">₹2,250 <span class="original-price">₹3,000</span> <span class="discount-badge">25% OFF</span></p>
+                </div>
+                <button class="add-to-cart" data-product="sale-7">Add to Cart</button>
+              </div>
+            </article>
+
+            <article class="product-card" data-product-id="sale-8" data-mrp="4000" data-discount="35" data-category="Sale" data-subcategory="bags" data-color="brown" data-sizes="one-size">
+              <div class="product-img-wrap">
+                <img src="images/leather-handbag.png" alt="Leather Handbag">
+              </div>
+              <div class="product-info">
+                <div class="product-details">
+                  <h3>Leather Handbag</h3>
+                  <p class="price sale">₹2,600 <span class="original-price">₹4,000</span> <span class="discount-badge">35% OFF</span></p>
+                </div>
+                <button class="add-to-cart" data-product="sale-8">Add to Cart</button>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+      </div>
+
+    </main>
+
+    <!-- ───── Footer ───── -->
+    <footer class="site-footer" id="siteFooter">
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="women.html">Women</a>
+        <a href="men.html">Men</a>
+        <a href="new-arrivals.html">New Arrivals</a>
+        <a href="sale.html">Sale</a>
+        <a href="about.html">About</a>
+      </nav>
+      <p class="copyright">Copyright &copy; 2022 · The OutThinkers</p>
+    </footer>
+
+  </div>
+
+  <script src="js/cartManager.js"></script>
+  <script src="js/category.js"></script>
+</body>
+</html>

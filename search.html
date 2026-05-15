@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Search products — The OutThinkers">
+  <title>Search — The OutThinkers</title>
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/search.css">
+</head>
+<body>
+  <div class="page-shell">
+    
+    <!-- Header / Navbar -->
+    <header class="topbar" id="topbar">
+      <a class="brand" href="index.html" aria-label="The OutThinkers home">
+        <span class="brand-name">The OutThinkers</span>
+      </a>
+
+      <div class="topbar-right">
+        <nav class="site-nav" aria-label="Main navigation">
+          <a href="women.html">Women</a>
+          <a href="men.html">Men</a>
+          <a href="new-arrivals.html">New Arrivals</a>
+          <a href="sale.html">Sale</a>
+          <a href="about.html">About</a>
+        </nav>
+
+        <div class="icon-actions">
+          <a href="search.html" aria-label="Search" id="searchIcon" class="active"><i class="fa-solid fa-magnifying-glass"></i></a>
+          <a href="cart.html" aria-label="View cart" id="cartIcon"><i class="fa-solid fa-bag-shopping"></i></a>
+          <a href="account.html" aria-label="Account" id="accountIcon"><i class="fa-regular fa-user"></i></a>
+        </div>
+      </div>
+    </header>
+
+    <main class="search-container">
+      
+      <!-- Search Input -->
+      <section class="search-header">
+        <div class="search-input-wrap">
+          <i class="fa-solid fa-magnifying-glass search-input-icon"></i>
+          <input type="text" id="searchInput" class="search-input" placeholder="Search for products..." autofocus autocomplete="off">
+          <button type="button" id="clearSearch" class="search-clear" style="display:none;" aria-label="Clear search">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+        <div class="search-meta" id="searchMeta" style="display:none;">
+          <span class="result-count" id="resultCount"></span>
+        </div>
+      </section>
+
+      <!-- Layout: Sidebar + Grid -->
+      <div class="search-layout">
+        
+        <!-- Sidebar Filters -->
+        <aside class="search-filters">
+          
+          <div class="filter-group">
+            <button class="filter-toggle" aria-expanded="true">
+              CATEGORY <i class="fa-solid fa-minus"></i>
+            </button>
+            <div class="filter-content open" id="categoryFilters">
+              <!-- Dynamic filter checkboxes injected by JS -->
+            </div>
+          </div>
+          
+          <div class="filter-group">
+            <button class="filter-toggle" aria-expanded="true">
+              PRICE <i class="fa-solid fa-minus"></i>
+            </button>
+            <div class="filter-content open" id="priceFilters">
+              <label class="custom-checkbox">
+                <input type="checkbox" data-price="0-2000">
+                <span class="checkmark"><i class="fa-solid fa-check"></i></span>
+                <span class="checkbox-label">Under ₹2,000</span>
+              </label>
+              <label class="custom-checkbox">
+                <input type="checkbox" data-price="2000-3500">
+                <span class="checkmark"><i class="fa-solid fa-check"></i></span>
+                <span class="checkbox-label">₹2,000 – ₹3,500</span>
+              </label>
+              <label class="custom-checkbox">
+                <input type="checkbox" data-price="3500-5000">
+                <span class="checkmark"><i class="fa-solid fa-check"></i></span>
+                <span class="checkbox-label">₹3,500 – ₹5,000</span>
+              </label>
+              <label class="custom-checkbox">
+                <input type="checkbox" data-price="5000+">
+                <span class="checkmark"><i class="fa-solid fa-check"></i></span>
+                <span class="checkbox-label">₹5,000+</span>
+              </label>
+            </div>
+          </div>
+
+        </aside>
+
+        <!-- Product Grid -->
+        <section class="search-grid" id="searchGrid">
+          <!-- Dynamic results injected by search.js -->
+          <div class="search-placeholder" id="searchPlaceholder">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <p>Start typing to search our collection</p>
+          </div>
+        </section>
+
+      </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-content">
+        <div class="footer-left">
+          <a class="brand footer-brand" href="index.html">
+            <span class="brand-name">The OutThinkers</span>
+          </a>
+          <p class="copyright">&copy; 2024 The OutThinkers. All rights reserved.</p>
+        </div>
+        <div class="footer-right">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Shipping & Returns</a>
+          <a href="#">Contact Us</a>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="js/cartManager.js"></script>
+  <script src="js/search.js"></script>
+</body>
+</html>

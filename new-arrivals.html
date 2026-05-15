@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="New arrivals at The OutThinkers — the latest curated essentials for men and women.">
+  <title>New Arrivals — The OutThinkers</title>
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/category.css">
+</head>
+<body>
+  <div class="page-shell">
+
+    <!-- ───── Header / Navbar ───── -->
+    <header class="topbar" id="topbar">
+      <a class="brand" href="index.html" aria-label="The OutThinkers home">
+        <span class="brand-name">The OutThinkers</span>
+      </a>
+
+      <div class="topbar-right">
+        <nav class="site-nav" aria-label="Main navigation">
+          <a href="women.html">Women</a>
+          <a href="men.html">Men</a>
+          <a href="new-arrivals.html" class="active">New Arrivals</a>
+          <a href="sale.html">Sale</a>
+          <a href="about.html">About</a>
+        </nav>
+
+        <div class="icon-actions">
+          <a href="search.html" aria-label="Search" id="searchIcon"><i class="fa-solid fa-magnifying-glass"></i></a>
+          <a href="cart.html" aria-label="View cart" id="cartIcon"><i class="fa-solid fa-bag-shopping"></i></a>
+          <a href="account.html" aria-label="Account" id="accountIcon"><i class="fa-regular fa-user"></i></a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+
+      <!-- ───── Page Title ───── -->
+      <section class="page-title">
+        <h1>NEW ARRIVALS</h1>
+      </section>
+
+      <!-- ───── Category Layout ───── -->
+      <div class="category-layout">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+          <ul class="sidebar-nav">
+            <li><a href="#" data-category="all" class="active">All</a></li>
+            <li><a href="#" data-category="outerwear">Outerwear</a></li>
+            <li><a href="#" data-category="tops">Tops</a></li>
+            <li><a href="#" data-category="bottoms">Bottoms</a></li>
+            <li><a href="#" data-category="dresses">Dresses</a></li>
+            <li><a href="#" data-category="accessories">Accessories</a></li>
+            <li><a href="#" data-category="shoes">Shoes</a></li>
+          </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <div class="content-area">
+
+          <!-- Filters -->
+          <div class="filters-bar">
+            <div class="filter-select">
+              <select id="sortBy">
+                <option value="featured">Sort By</option>
+                <option value="price-low">Price: Low to High</option>
+                <option value="price-high">Price: High to Low</option>
+                <option value="name-az">Name: A–Z</option>
+                <option value="name-za">Name: Z–A</option>
+              </select>
+            </div>
+            <div class="filter-select">
+              <select id="colorFilter">
+                <option value="all">Color</option>
+                <option value="beige">Beige</option>
+                <option value="grey">Grey</option>
+                <option value="black">Black</option>
+                <option value="brown">Brown</option>
+                <option value="cream">Cream</option>
+                <option value="pink">Pink</option>
+                <option value="navy">Navy</option>
+              </select>
+            </div>
+            <div class="filter-select">
+              <select id="sizeFilter">
+                <option value="all">Size</option>
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+              </select>
+            </div>
+            <div class="filter-select">
+              <select id="priceRange">
+                <option value="all">Price Range</option>
+                <option value="0-1000">Under ₹1,000</option>
+                <option value="1000-2000">₹1,000 – ₹2,000</option>
+                <option value="2000-3000">₹2,000 – ₹3,000</option>
+                <option value="3000+">₹3,000+</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Product Grid -->
+          <div class="product-grid" id="productGrid">
+
+            <article class="product-card" data-product-id="new-1" data-mrp="2799" data-discount="14" data-category="New Arrivals" data-subcategory="tops" data-color="cream" data-sizes="XS,S,M,L">
+              <div class="product-img-wrap">
+                <span class="new-badge">NEW</span>
+                <img src="images/silk-blouse.png" alt="Silk Blouse">
+              </div>
+              <div class="product-info">
+                <div class="product-details">
+                  <h3>Silk Blouse</h3>
+                  <p class="price">₹2,407</p>
+                </div>
+                <button class="add-to-cart" data-product="new-1">Add to Cart</button>
+              </div>
+            </article>
+
+            <article class="product-card" data-product-id="new-2" data-mrp="5499" data-discount="18" data-category="New Arrivals" data-subcategory="outerwear" data-color="beige" data-sizes="S,M,L,XL">
+              <div class="product-img-wrap">
+                <span class="new-badge">NEW</span>
+                <img src="images/structured-wool-coat.png" alt="Structured Wool Coat">
+              </div>
+              <div class="product-info">
+                <div class="product-details">
+                  <h3>Structured Wool Coat</h3>
+                  <p class="price">₹4,509</p>
+                </div>
+                <button class="add-to-cart" data-product="new-2">Add to Cart</button>
+              </div>
+            </article>
+
+            <article class="product-card" data-product-id="new-3" data-mrp="3500" data-discount="20" data-category="New Arrivals" data-subcategory="dresses" data-color="grey" data-sizes="XS,S,M,L">
+              <div class="product-img-wrap">
+                <span class="new-badge">NEW</span>
+                <img src="images/knit-dress.png" alt="Ribbed Knit Dress">
+              </div>
+              <div class="product-info">
+                <div class="product-details">
+                  <h3>Ribbed Knit Dress</h3>
+                  <p class="price">₹2,800</p>
+                </div>
+                <button class="add-to-cart" data-product="new-3">Add to Cart</button>
+              </div>
+            </article>
+
+            <article class="product-card" data-product-id="new-4" data-mrp="3999" data-discount="25" data-category="New Arrivals" data-subcategory="shoes" data-color="brown" data-sizes="7,8,9,10,11">
+              <div class="product-img-wrap">
+                <span class="new-badge">NEW</span>
+                <img src="images/leather-boots.png" alt="Leather Boots">
+              </div>
+              <div class="product-info">
+                <div class="product-details">
+                  <h3>Leather Boots</h3>
+                  <p class="price">₹2,999</p>
+                </div>
+                <button class="add-to-cart" data-product="new-4">Add to Cart</button>
+              </div>
+            </article>
+
+            <article class="product-card" data-product-id="new-5" data-mrp="4999" data-discount="20" data-category="New Arrivals" data-subcategory="tops" data-color="pink" data-sizes="S,M,L">
+              <div class="product-img-wrap">
+                <span class="new-badge">NEW</span>
+                <img src="images/cashmere-sweater.png" alt="Cashmere Sweater">
+              </div>
+              <div class="product-info">
+                <div class="product-details">
+                  <h3>Cashmere Sweater</h3>
+                  <p class="price">₹3,999</p>
+                </div>
+                <button class="add-to-cart" data-product="new-5">Add to Cart</button>
+              </div>
+            </article>
+
+            <article class="product-card" data-product-id="new-6" data-mrp="1999" data-discount="15" data-category="New Arrivals" data-subcategory="outerwear" data-color="grey" data-sizes="S,M,L,XL">
+              <div class="product-img-wrap">
+                <span class="new-badge">NEW</span>
+                <img src="images/cargo-basket.png" alt="Cargo Basket">
+              </div>
+              <div class="product-info">
+                <div class="product-details">
+                  <h3>Cargo Basket</h3>
+                  <p class="price">₹1,699</p>
+                </div>
+                <button class="add-to-cart" data-product="new-6">Add to Cart</button>
+              </div>
+            </article>
+
+            <article class="product-card" data-product-id="new-7" data-mrp="4000" data-discount="20" data-category="New Arrivals" data-subcategory="accessories" data-color="brown" data-sizes="one-size">
+              <div class="product-img-wrap">
+                <span class="new-badge">NEW</span>
+                <img src="images/leather-handbag.png" alt="Leather Handbag">
+              </div>
+              <div class="product-info">
+                <div class="product-details">
+                  <h3>Leather Handbag</h3>
+                  <p class="price">₹3,200</p>
+                </div>
+                <button class="add-to-cart" data-product="new-7">Add to Cart</button>
+              </div>
+            </article>
+
+            <article class="product-card" data-product-id="new-8" data-mrp="3500" data-discount="20" data-category="New Arrivals" data-subcategory="bottoms" data-color="black" data-sizes="S,M,L,XL,XXL">
+              <div class="product-img-wrap">
+                <span class="new-badge">NEW</span>
+                <img src="images/trousers.png" alt="Slim Trousers">
+              </div>
+              <div class="product-info">
+                <div class="product-details">
+                  <h3>Slim Trousers</h3>
+                  <p class="price">₹2,800</p>
+                </div>
+                <button class="add-to-cart" data-product="new-8">Add to Cart</button>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+      </div>
+
+    </main>
+
+    <!-- ───── Footer ───── -->
+    <footer class="site-footer" id="siteFooter">
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="women.html">Women</a>
+        <a href="men.html">Men</a>
+        <a href="new-arrivals.html">New Arrivals</a>
+        <a href="sale.html">Sale</a>
+        <a href="about.html">About</a>
+      </nav>
+      <p class="copyright">Copyright &copy; 2022 · The OutThinkers</p>
+    </footer>
+
+  </div>
+
+  <script src="js/cartManager.js"></script>
+  <script src="js/category.js"></script>
+</body>
+</html>
