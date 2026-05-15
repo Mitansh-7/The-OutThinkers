@@ -73,4 +73,4 @@ Pixel Flow/
 
 ## License
 
-© 2024 The OutThinkers. All rights reserved.
+© 2026 The OutThinkers. All rights reserved.
