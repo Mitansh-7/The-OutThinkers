@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,13 +9,16 @@
   <link rel="icon" type="image/png" href="images/favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="css/cart.css">
 </head>
+
 <body>
   <div class="page-shell">
-    
+
     <!-- ───── Header / Navbar ───── -->
     <header class="topbar" id="topbar">
       <a class="brand" href="index.html" aria-label="The OutThinkers home">
@@ -32,7 +36,8 @@
 
         <div class="icon-actions">
           <a href="search.html" aria-label="Search" id="searchIcon"><i class="fa-solid fa-magnifying-glass"></i></a>
-          <a href="cart.html" aria-label="View cart" id="cartIcon" class="active"><i class="fa-solid fa-bag-shopping"></i></a>
+          <a href="cart.html" aria-label="View cart" id="cartIcon" class="active"><i
+              class="fa-solid fa-bag-shopping"></i></a>
           <a href="account.html" aria-label="Account" id="accountIcon"><i class="fa-regular fa-user"></i></a>
         </div>
       </div>
@@ -49,7 +54,7 @@
             <span class="label-quantity">QUANTITY</span>
             <span class="label-price">PRICE</span>
           </div>
-          
+
           <div class="cart-items-list" id="cartItemsList">
             <!-- Items injected by cart.js -->
           </div>
@@ -59,28 +64,28 @@
         <div class="cart-summary-section">
           <div class="summary-box">
             <h2>Order Summary</h2>
-            
+
             <div class="summary-row">
               <span class="summary-label">Subtotal</span>
               <span class="summary-value" id="summarySubtotal">₹730.00</span>
             </div>
-            
+
             <div class="summary-row summary-shipping">
               <span class="summary-label">Shipping</span>
               <span class="summary-value">Calculated at next step</span>
             </div>
-            
+
             <hr class="summary-divider">
-            
+
             <div class="summary-row summary-total">
               <span class="summary-label">Total</span>
               <span class="summary-value" id="summaryTotal">₹730.00</span>
             </div>
-            
+
             <button type="button" class="btn-checkout">
               PROCEED TO CHECKOUT <i class="fa-solid fa-arrow-right"></i>
             </button>
-            
+
             <div class="secure-checkout">
               <i class="fa-solid fa-lock"></i> SECURE CHECKOUT
             </div>
@@ -96,7 +101,7 @@
           <a class="brand footer-brand" href="index.html">
             <span class="brand-name">The OutThinkers</span>
           </a>
-          <p class="copyright">&copy; 2024 The OutThinkers. All rights reserved.</p>
+          <p class="copyright">&copy; 2026 The OutThinkers. All rights reserved.</p>
         </div>
         <div class="footer-right">
           <a href="#">Privacy Policy</a>
@@ -112,4 +117,5 @@
   <script src="js/cartManager.js"></script>
   <script src="js/cart.js"></script>
 </body>
+
 </html>
