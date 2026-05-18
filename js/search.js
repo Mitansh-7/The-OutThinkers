@@ -168,8 +168,10 @@ document.addEventListener('DOMContentLoaded', function() {
     if (placeholder) placeholder.style.display = 'none';
 
     // Remove old cards
-    var oldCards = searchGrid.querySelectorAll('.product-card');
-    oldCards.forEach(function(c) { c.remove(); });
+    var oldItems = searchGrid.querySelectorAll('.product-card, .search-no-results');
+    oldItems.forEach(function(item) {
+    item.remove();
+  });
 
     if (results.length === 0) {
       var noResults = document.createElement('div');
